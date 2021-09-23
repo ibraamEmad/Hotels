@@ -4,14 +4,18 @@ import colors from '@palette';
 
 const w = (Dimensions.get('window').width);
 
-const pri=colors.primary
 
 export const styles=StyleSheet.create({
     container : {
         flex: 1,
-        backgroundColor:pri,
+        backgroundColor:colors.primary,
         alignItems:'center'
        },
+    header:{
+        flexDirection:'row',
+        justifyContent:'space-between',
+        width:w*0.9
+    },
     title:{
         fontSize:normalize(18),
         fontWeight:'bold',
@@ -19,5 +23,9 @@ export const styles=StyleSheet.create({
         marginTop:w*0.14,
         marginBottom:w*0.1,
     },
-
+    list:{ 
+        marginTop: w * 0.05,
+        paddingBottom: w * 0.01,
+        width: w * 0.9, 
+    }
 })

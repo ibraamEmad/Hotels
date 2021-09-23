@@ -11,26 +11,15 @@ LogBox.ignoreAllLogs(true);
 
 
 export default class App extends React.Component {
-  state = {
-      isConnected: true,
-      keyboard:false,
-      isLoggedIn:false,
-      isLoading:false
-    };
 
-  
   render() {
-  return (
-  <ErrorBoundary>
-  <Provider store={store} >
-  {/* <StatusBar
-      backgroundColor="#0B121A"
-      barStyle="light-content"
-    /> */}
-      <Navigator/>
-   </Provider>
-   </ErrorBoundary>
-  );
+    return (
+      <ErrorBoundary>
+        <Provider store={store} >
+          <Navigator />
+        </Provider>
+      </ErrorBoundary>
+    );
   }
-  }
+}
 

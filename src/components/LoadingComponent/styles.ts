@@ -6,8 +6,11 @@ const w = (Dimensions.get('window').width);
 const h = (Dimensions.get('window').height);
 
 export const styles=StyleSheet.create({
+    cardsContainer:{
+        marginTop:w*0.05
+    },
     container:{
-        marginBottom:h*0.02
+        marginVertical:h*0.02,
     },
     txt:{
         color:colors.secondary,
@@ -18,7 +21,6 @@ export const styles=StyleSheet.create({
         width:w*0.9,
         height:w*0.4,
         borderRadius:15,
-        backgroundColor:'silver',
         justifyContent:'flex-end'
     },
     textContainer:{
@@ -52,20 +54,5 @@ export const styles=StyleSheet.create({
         width:w*0.9,
         justifyContent:'space-between'
     },
-    priceContainer:{
-        backgroundColor:colors.secondary,
-        paddingVertical:w*0.02,
-        paddingHorizontal:w*0.03,
-        position:'absolute',
-        top:w*0.02,
-        right:w*0.02,
-        borderRadius:15,
-        justifyContent:'center',
-        alignItems:'center'
-      },
-      price:{
-        color:'white',
-        fontSize:normalize(12),
-      }
 
 })
